@@ -286,6 +286,7 @@ body
     text-align: left;
     font-weight: bold;
     color: burlywood;
+    padding-top: 1rem;
 }
 .result .return
 {
@@ -311,10 +312,12 @@ body
 }
 .result .message
 {
-    text-align: right;
+    text-align: center;
     position: relative;
     top: 2rem;
-    color: red;
+    color: white;
+    background-color: red;
+    padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
 }
