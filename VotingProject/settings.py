@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-14lco80dcucz(#m^3+3!2&%q+-8z1-gq42^jaawx&bvh=hdf6m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['my-voting-site.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
