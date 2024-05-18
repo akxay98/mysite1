@@ -1,0 +1,320 @@
+@media screen and (max-width: 640px)
+{
+    *
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 8px;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px)
+{
+    *
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 1008px) and (max-width: 1920px)
+{
+    *
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    
+}
+@media screen and (min-width: 1921px) and (max-width: 3840px)
+{
+    *
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    
+}
+/* -------------------------------------css for base.html---------------------------------- */
+
+body
+{
+    background-image: linear-gradient(to left,#28282B, black);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', Cambria, Cochin, Georgia, Times, serif;
+    overflow-wrap: break-word;
+    
+}
+.top img
+{
+    width: 3rem;
+    padding-top: 0.2rem;
+}
+.top h4
+{
+    position: relative;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    top: 0.6rem;
+    left: 0.7rem;
+    color: whitesmoke;
+    display: inline;
+
+}
+.bottom
+{
+    position: relative;
+    top: 14vh;
+    bottom: 0vh;
+}
+.bottom div
+{
+    color: white;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.bottom a
+{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: aqua;
+}
+
+/* -------------------------------------css for login.html---------------------------------- */
+
+.login-box
+{
+    padding-top: 8rem;
+    padding-bottom: 14rem;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    min-height: 38rem;
+    max-height: fit-content;
+    color: white;
+}
+.login-box #email
+{
+    
+    position: relative;
+    top: 30px;
+    left: 30%;
+    width: 40%;
+    font-size: 1rem;
+    text-align: center;
+}
+.login-box #submit
+{
+    position: relative;
+    top: 50px;
+    width: 10rem;
+    height: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s;
+}
+.login-box #submit:hover
+{
+    width:10.5rem;
+    height: 2.8rem; 
+    font-size: 1.05rem;
+}
+
+/* -------------------------------------css for index.html---------------------------------- */
+
+.index
+{
+    color: whitesmoke;
+    position: relative;
+    top: 5rem;
+    min-height: 38rem;
+    max-height: fit-content;
+    text-align: justify;
+    padding-bottom: 5rem;
+}
+.index h2
+{
+    text-align: center;
+}
+.content
+{
+    position: relative;
+    text-align: center;
+    background-color: #36454F;
+    left: 20%;
+    width: 60%;
+    border-radius: 4rem;
+    padding: 5rem;
+    top: 5rem;
+    font-family: 'Montserrat';
+    box-shadow: 10px 10px 10px black;
+    align-content: space-around;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+.content:hover
+{
+    box-shadow: 10px 10px 20px red;
+    width: 62%;
+    opacity: 1;
+    transform: translateX(-2%);
+}
+.content h3
+{
+    color: burlywood;
+    font-weight: bold;
+}
+.content small
+{
+    color: black;
+    font-size: 0.8rem;
+}
+.index .btn
+{
+    width: 10rem;
+    height: 2.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.index .btn:hover
+{
+    box-shadow: 5px 5px 10px black;
+}
+
+/* -------------------------------------css for vote.html---------------------------------- */
+
+.vote-page
+{
+    position: relative;
+    top: 5rem;
+    color: white;
+    text-align: center;
+    min-height: 38rem;
+    max-height: fit-content;
+    padding-bottom: 5rem;
+}
+.vote-page .head
+{
+    text-align: left;
+}
+.vote-page .options
+{
+    position: relative;
+    top: 1rem;
+    text-align: left;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+.vote-page .box
+{
+    position: relative;
+    top: 3rem;
+}
+.options .btn
+{
+    position: relative;
+    top: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    font-weight: bold;
+}
+.vote-page .head h4
+{
+    color: burlywood;
+    font-weight: bold;
+}
+.vote-page .head small
+{
+    font-size: 0.8rem;
+}
+.vote-page .options .radio
+{
+    padding-bottom: 1.3rem;
+    
+}
+.vote-page .radio input
+{
+    width: 1rem;
+}
+.vote-page .radio label
+{
+    width: 100%;
+    padding-left: 1rem;
+}
+
+/* -------------------------------------css for result.html---------------------------------- */
+
+.result
+{
+    position: relative;
+    top: 5rem;
+    display: block;
+    color: white;
+    min-height: 38rem;
+    max-height: fit-content;
+    padding-bottom: 5rem;
+}
+.result .votes
+{
+    float: right;
+    text-align: right;
+    padding-left: 3rem;
+}
+.result h2
+{
+    text-align: center;
+    
+}
+.result .result-bar .text
+{
+    color: burlywood;
+}
+.result .result-bar
+{
+    position: relative;
+    top: 2rem;
+    font-weight: bold;
+}
+.result .result-bar h4
+{
+    text-align: left;
+    font-weight: bold;
+    color: burlywood;
+}
+.result .return
+{
+    position: relative;
+    top: 2rem;
+}
+.result .progress-bar
+{
+    background-color: #014e2c;
+}
+.result .return .btn
+{
+    width: 10rem;
+    height: 2.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.result .return .btn:hover
+{
+    width: 10.5rem;
+    height: 2.8rem;
+    font-size: 1.05rem;
+}
+.result .message
+{
+    text-align: right;
+    position: relative;
+    top: 2rem;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}

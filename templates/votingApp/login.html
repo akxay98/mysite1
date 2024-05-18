@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container login-box">
+    <div>
+        <h3>Use your Email ID to Vote</h3>
+    </div>
+    <div>
+        <form action="" method='POST'>
+            <div>
+                <input type='email' name='email' id='email' class="form-control" placeholder="Enter your email" required>
+            </div>
+            {% csrf_token %}
+            <div>
+                <input type='submit' value='LOGIN' class="btn btn-primary" id="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

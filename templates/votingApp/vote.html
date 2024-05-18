@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container vote-page">
+    <h2>CAST YOUR VOTE</h2>
+    <div class="box">
+        <div class="row head">
+            <div class="col">
+                <h4>{{ques.ques_head}}</h4>
+                <div>{{ques.description}}</div>
+                <small>{{ques.pub_date}}</small>
+            </div>
+        </div>
+        <div class="options">
+            <form method='POST'>
+                {% csrf_token %}
+                    {% for c in choice %}
+                    <div class="form-check radio">
+                        <input type='radio' id='radio{{c.id}}' name='choices' value='{{c.id}}' class="form-check-input" required>
+                        <label for='radio{{c.id}}' class="form-check-label"> {{c.choice_text}}</label>
+                    </div>
+                    {% endfor %}
+                    <a href='result/{{ques.id}}'><input type='submit' value='SUBMIT VOTE' class="btn btn-success"></a>
+            </form>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

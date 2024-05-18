@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid index">
+    <div>
+        <h2>CURRENTLY GOING ON POLLS</h2><br>
+        <p>Polls are one of the best ways to engage an in-person audience at a meeting, conference, or event. They are incredibly versatile and work just as well for remote and hybrid calls, presentations, and classes. Voters can easily submit their responses via their smartphone and responses can appear in real-time (by default), or at once when the presenter chooses.  </p>
+
+Polls are the staple of a good Mentimeter presentation so all of the Menti experts here have compiled their best polls and made each of them downloadable as templates. Our poll templates feature opinion polls, straw polls, classroom polls, as well as meeting polls. 
+    </div>
+        {% for q in ques %}
+            <div class="content">
+                <div><h3>{{q.ques_head}}</h3></div>
+                <div>{{q.description}}</div>
+                <div><small>Published Date: {{q.pub_date}}</small></div>
+                
+            <br><a href='vote/{{q.id}}'><input type='submit' value='PARTICIPATE' class="btn btn-primary"></a>
+                
+            </div><br><br><br>
+        {% endfor %}   
+</div>
+{% endblock %}

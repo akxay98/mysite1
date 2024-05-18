@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}  
+{% endblock %}
+
+{% block content %}
+
+<div class="container result">
+    <div><h2>RESULTS FOR THE POLL</h2></div>
+
+    <div class="message">
+        {% if con %}
+            {{con}}
+            <p>Please vote for another category or vote from another user. Thank You</p>
+        {% endif %}
+    </div>
+    
+    <div class="result-bar">
+        <h4>{{ques.ques_head}}</h4><br>
+        {% for c in choice %}
+            <div class="row text">
+                <div class="col-8">{{c.choice_text}}</div>
+                <div class="votes col-4">{{c.vote}} votes</div>
+            </div>
+            <div class="progress" style="height: 2rem;">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: {{c.percentage}}%;" aria-valuenow="{{c.percentage}}" id="vote-progress">{{c.percentage}}%</div>
+            </div><br>
+        {% endfor %}
+        <div class="return row">
+            <div class="col"><a href='/index'><input type='submit' value='HOME' class="btn btn-primary"></a></div>
+            <div class="col" style="text-align: right;"><a href='/'><input type='submit' value='LOGOUT' class="btn btn-danger"></a></div>
+        </div>
+    </div><br><br><br> 
+</div>
+{% endblock %}
