@@ -7,6 +7,10 @@
         margin-top: 0px;
         font-size: 8px;
     }
+    .bottom .copyr,.bottom .myname
+    {
+        text-align: center !important;
+    }
 }
 @media screen and (min-width: 641px) and (max-width: 1007px)
 {
@@ -15,7 +19,11 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .bottom .copyr,.bottom .myname
+    {
+        text-align: center !important;
     }
 }
 @media screen and (min-width: 1008px) and (max-width: 1920px)
@@ -36,7 +44,7 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        font-size: 20px;
+        font-size: 24px;
     }
     
 }
@@ -70,8 +78,13 @@ body
 .bottom
 {
     position: relative;
-    top: 14vh;
-    bottom: 0vh;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+}
+.bottom .myname
+{
+    text-align: right;
 }
 .bottom div
 {
@@ -90,14 +103,18 @@ body
 
 .login-box
 {
-    padding-top: 8rem;
-    padding-bottom: 14rem;
-    text-align: center;
-    position: relative;
-    top: 5rem;
-    min-height: 38rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    align-content: center;
+    min-height: 85vh;
     max-height: fit-content;
     color: white;
+}
+.login-box div
+{
+    text-align: center;
+    align-items: center;
 }
 .login-box #email
 {
@@ -130,10 +147,9 @@ body
 
 .index
 {
+    padding-top: 5rem;
     color: whitesmoke;
-    position: relative;
-    top: 5rem;
-    min-height: 38rem;
+    min-height: 85vh;
     max-height: fit-content;
     text-align: justify;
     padding-bottom: 5rem;
@@ -191,13 +207,13 @@ body
 
 .vote-page
 {
-    position: relative;
-    top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     color: white;
     text-align: center;
-    min-height: 38rem;
+    min-height: 85vh;
     max-height: fit-content;
-    padding-bottom: 5rem;
+
 }
 .vote-page .head
 {
@@ -205,16 +221,14 @@ body
 }
 .vote-page .options
 {
-    position: relative;
-    top: 1rem;
+    padding-top: 1rem;
     text-align: left;
     overflow-wrap: break-word;
     width: 100%;
 }
 .vote-page .box
 {
-    position: relative;
-    top: 3rem;
+    padding-top: 5rem;
 }
 .options .btn
 {
@@ -252,13 +266,12 @@ body
 
 .result
 {
-    position: relative;
-    top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: block;
     color: white;
-    min-height: 38rem;
-    max-height: fit-content;
-    padding-bottom: 5rem;
+    min-height: 85vh;
+    max-height: fit-content; 
 }
 .result .votes
 {
@@ -277,8 +290,7 @@ body
 }
 .result .result-bar
 {
-    position: relative;
-    top: 2rem;
+    padding-top: 2rem;
     font-weight: bold;
 }
 .result .result-bar h4
@@ -290,8 +302,7 @@ body
 }
 .result .return
 {
-    position: relative;
-    top: 2rem;
+    padding-top: 2rem;
 }
 .result .progress-bar
 {
@@ -313,8 +324,7 @@ body
 .result .message
 {
     text-align: center;
-    position: relative;
-    top: 2rem;
+    padding-top: 2rem;
     color: white;
     padding: 1rem;
     font-size: 1rem;
