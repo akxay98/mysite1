@@ -16,7 +16,7 @@ def index(request):
 
 def vote(request, ID):
     ques = Question.objects.get(id=ID)  
-    choice = Choice.objects.filter(question=ques)
+    choice = Choice.objects.filter(question=ques).order_by('id')
     if login.email not in ques.voters_email:
         if request.method=='POST':
             vote_id = request.POST.get('choices')
