@@ -5,12 +5,22 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .bottom .copyr,.bottom .myname
     {
         text-align: center !important;
     }
+    .content
+    {
+        left: 0 !important;
+        width: 90% !important;
+    }
+    .content:hover
+    {
+        width: 93% !important;
+    }
+
 }
 @media screen and (min-width: 641px) and (max-width: 1007px)
 {
@@ -19,12 +29,22 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .bottom .copyr,.bottom .myname
     {
         text-align: center !important;
     }
+    .content
+    {
+        left: 0 !important;
+        width: 80% !important;
+    }
+    .content:hover
+    {
+        width: 83% !important;
+    }
+
 }
 @media screen and (min-width: 1008px) and (max-width: 1920px)
 {
@@ -90,7 +110,7 @@ body
 {
     color: white;
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .bottom a
 {
@@ -163,23 +183,21 @@ body
     position: relative;
     text-align: center;
     background-color: #36454F;
-    left: 20%;
+    margin: 0 auto;
     width: 60%;
     border-radius: 4rem;
     padding: 5rem;
     top: 5rem;
     font-family: 'Montserrat';
-    box-shadow: 10px 10px 10px black;
-    align-content: space-around;
+    box-shadow: 0.7rem 0.7rem 0.7rem black;
     opacity: 0.6;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 .content:hover
 {
-    box-shadow: 10px 10px 20px red;
+    box-shadow: 0.7rem 0.7rem 2rem red;
     width: 62%;
     opacity: 1;
-    transform: translateX(-2%);
 }
 .content h3
 {
